@@ -4,13 +4,13 @@ require_once('db.php');
 
 index($conn);
 
-function index($conn){
+function index($conn)
+{
 	if (isset($_POST)) { 
 		validate($_POST);
-      insertData($_POST, $conn);
-      getData($conn);
-
-      message('success', 'Your registration is successful', ''); 
+                insertData($_POST, $conn);
+                getData($conn);
+                message('success', 'Your registration is successful', ''); 
 	}
 }
 
